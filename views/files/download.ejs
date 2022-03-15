@@ -1,0 +1,24 @@
+<% layout('layouts/boilerplate') %> 
+
+<div>
+    <h3>All Uploads</h3>
+
+    <div class="col-6 offset-3">
+        <% for (let item of list){%>
+            
+           
+            <div class="card mb-3 col-6 text-center" style="width: 18rem;">
+                <img class="card-img-top" src="<%=item.image%>" alt="Card image cap">
+                <div class="card-body">
+                  <a class="btn btn-primary" href="/download/<%=item._id %> ">Download </a>
+                </div>
+            </div>
+    
+        <% }%>
+    </div>
+
+    
+           
+   
+</div>
+
